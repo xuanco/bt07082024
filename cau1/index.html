@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event</title>
+</head>
+<body>
+    <label for="nhapSo">Nhập số:</label>
+    <input type="number" id="nhapSo" value="123">
+
+    <script>
+        const input = document.getElementById('nhapSo');
+
+        function logValue() {
+            console.log(input.value);
+        }
+
+        logValue();
+
+        input.addEventListener('input', logValue);
+    </script>
+</body>
+</html>
